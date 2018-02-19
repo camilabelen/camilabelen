@@ -1,0 +1,41 @@
+section{
+  height: 100vh;
+}
+
+section h2{
+  font-size: 6em;
+  font-family: helvetica, arial;
+  color: #333;
+  text-align: center;
+}
+
+.section p{
+  font-size: 1em;
+}
+
+.about{
+  margin-top: 10vh;
+}
+.photo img{
+  border-radius: 50%;
+  width: 100%;
+  
+}
+#demo{
+  margin-top: 10vh;
+}
+
+.work img{
+  width: 100%;
+}
+
+.work{
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+#contact{
+  background:#333333;
+  color:#f4f4f4;
+  padding-bottom:80px;
+}
