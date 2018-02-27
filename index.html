@@ -5,101 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- menu -->
-  <header>
-    
-  </header>
-  <section>
-    <div class="container-fluid">
-      <h2>Home</h2>
-    </div>    
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <h2>About me</h2>
+  <!-- MENU -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <!-- HOME -->
+    <section class="container-fluid home" id="firstSection"></section>
+    <!-- ABOUT -->
+    <section class="content-container container" id="secondSection">
+      <div class="row site-title">
+        <h1>About me</h1>
+      </div>
+      <div class="row content">
+        <div class="col-lg-3">
+          <img src="assets/img/camila5.jpg" alt="" class="" />
         </div>
-        <div class="row about">
-          <div class="col-md-4 photo">
-            <img src="assets/img/camila5.jpg" alt="">
-          </div>
-          <div class="col-md-8 col-xs-12 text-justify">
-            <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore inventore incidunt quidem ratione, voluptatibus pariatur esse numquam saepe magnam, eum nihil natus aut laboriosam quia adipisci nisi dolorum aliquid mollitia fugit amet sit tempora! Aliquid unde tempore, porro quod aperiam provident ratione quia illum doloribus voluptatem mollitia, laborum in commodi nesciunt non incidunt! In reiciendis obcaecati deleniti excepturi cumque, sunt saepe, voluptas exercitationem, eveniet quas perferendis omnis, fugiat perspiciatis doloribus aliquid placeat. Consequatur, maiores asperiores molestiae assumenda, libero est quas harum beatae ab sapiente cum, eveniet voluptatum praesentium maxime porro ratione sunt minus debitis laudantium fugiat totam at. </p>
-          </div>
+        <div class="col-lg-9 text-justify">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nulla mollis, efficitur urna nec, viverra dolor. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent efficitur finibus eros sit amet sagittis. Ut sollicitudin sodales neque et volutpat. Curabitur dictum ante vel fermentum volutpat. Curabitur ac neque et erat viverra egestas.</p>
+        </div>   
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="content-container container" id="thirdSection">
+      <div class="site-title">
+        <h1>My Skills</h1>
+      </div>
+      <div class="content">
+        <h1></h1>
+        <img src="https://placehold.it/700x250" alt="" class="" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget nulla mollis, efficitur urna nec, viverra dolor. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent efficitur finibus eros sit amet sagittis. Ut sollicitudin sodales neque et volutpat. Curabitur dictum ante vel fermentum volutpat. Curabitur ac neque et erat viverra egestas.</p>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="content-container container" id="fourthSection">
+      <div class="row site-title">
+        <h1>Projects</h1>
+      </div>
+      <div class="row content">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/catbook.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/labcar.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/catbook.png" alt="">
         </div>
       </div>
-    </div>  
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <h2>Skills</h2>
+      <div class="row content">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/catbook.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/labcar.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 projects">
+          <img src="assets/img/catbook.png" alt="">
         </div>
       </div>
-    </div>    
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <h2>Projects</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 work">
-            <img src="assets/img/catbook.png" alt="">
-          </div>
-          <div class="col-md-4 work">
-            <img src="assets/img/labcar.png" alt="">
-          </div>
-          <div class="col-md-4 work">
-            <img src="assets/img/labcar.png" alt="">
-          </div>
-        </div>
-        
+    </section>
+    <!-- CONTACT -->
+    <section class="content-container container" id="fifthSection">
+      <div class="row site-title">
+        <h1>Contact</h1>
       </div>
-    </div>    
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <h2>Contact</h2>
-        </div>
-        <div class="row">
-          <form class="form-horizontal">
+      <div class="row content">
+        <div class="col-lg-12">
+          <form class="form-horizontal formulario">
             <div class="form-group">
-              <label for="exampleInputName2">Name</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+              <div class="col-md-12">
+                <label for="">Name</label>
+              </div>
+              <div class="col-md-12">
+                <input type="text" name="name" placeholder="Name" required autofocus>
+                <p id="warningName"></p>
+              </div>              
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail2">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-            </div>
-            <div class="form-group ">
-              <label for="exampleInputText">Your Message</label>
-              <textarea  class="form-control" placeholder="Description"></textarea> 
-            </div>
-              <button type="submit" class="btn btn-default">Send Message</button>
+              <div class="col-md-12">
+                <label for="">Email</label>
+              </div>              
+              <div class="col-md-12">
+                <input type="text" id="emailField" name="email" placeholder="email@example.com" required>
+                <p id="warningEmail"></p>
+              </div>              
+            </div> 
+            <div class="form-group">
+              <div class="col-md-12">
+                <label for="">Message</label>
+              </div>
+              <div class="col-md-12">
+                <textarea name="comment" placeholder="Write your message here" ></textarea>
+                <p id="warningComment"></p>
+              </div>              
+            </div>           
+            <button class="btn" type="submit" value="Send" id="contact">Send <i class="fas fa-paper-plane"></i></button>
           </form>
+        </div>  
+      </div>
+      <!-- BOTON PARA VOLVER AL INICIO -->
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5 text-center topBtn 
+        hi-icon-effect-3 hi-icon-effect-3a">
+          <button class="btn" id="top"><span class="glyphicon glyphicon-menu-up"></span></button>
         </div>
-        <div class="text-center" id="top">
-          <button>top</button>
+      </div>      
+    </section> 
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <p>Developed by Camila Cornejos | Laboratoria</p>
         </div>
       </div>
-    </div>   
-  </section>
-  <footer>
-    
-  </footer> 
+    </div>
+  </footer>
+  <!-- LISTA DEL MENU -->
+  <div class="slideout-sidebar">
+    <ul id="menu">
+      <li data-menuanchor="firstSection"><a href="#firstSection" title="First Section" class="cl-effect-1">Home</a></li>
+      <li data-menuanchor="secondSection"><a href="#secondSection" title="SecondSection" class="cl-effect-1">This is me</a></li>
+      <li data-menuanchor="thirdSection"><a href="#fourthSection" title="FourthSection" class="cl-effect-1">My Skills</a></li>
+      <li data-menuanchor="fourthSection"><a href="#fourthSection" title="FourthSection" class="cl-effect-1">My Proyects</a></li>
+      <li data-menuanchor="fifthSection"><a href="#fifthSection" title="FifthSection" class="cl-effect-1">Contact me</a></li>
+    </ul>
+  </div>  
+  
   <!-- script -->
+  <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+  <!-- bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- main.js -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
