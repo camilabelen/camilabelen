@@ -1,57 +1,169 @@
-/*body{
- background: linear-gradient(45deg, rgba(20,201,201,1) 0%, rgba(20,201,201,1) 1%, rgba(57,212,166,1) 48%, rgba(33,140,148,1) 97%, rgba(33,140,148,1) 100%);
-
-}*/
-
-section{
-  height: auto;
+body{
+font-family: 'Nanum Gothic', sans-serif;
 }
 
-/*menu*/
+/* -- Menu -- */
 #menu li a {
   list-style: none;
   text-decoration-style: none;
-  color: #E9E9E9;
+  color: #FFF;
 }
 
 #menu li a:hover {
   text-decoration: none;
+  color: #E9E9E9;
 }
 
-/*Home*/
-.home{
-  background-image: url(../img/fondobakan.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0 auto;
+/* -- Home -- */
+#firstSection{
+  background: linear-gradient(to top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(247,207,228,1) 51%, rgba(150,117,191,1) 100%);
+  color: #FFF;
+
 }
 
-/*Projects*/
+.homeImage img{
+  width: 100%;
+  height: auto;
+  margin: 10% 0 5% 0;
+}
+
+.greeting{
+  margin-top: 15%;
+}
+
+.greeting button{
+  background-color: #985FA2;
+  border-radius: 1em;
+}
+
+.greeting button:focus{
+  outline: none;
+}
+
+.greeting button a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.greeting button a:hover{
+  color: #FCDEFE;
+  text-decoration: none;
+}
+
+/* -- About -- */
+.aboutTitle{
+
+}
+
+.about{
+  margin-top: 10%;
+  padding: 0;
+}
+
+/* -- Skills -- */
+.skills{
+  color: #FFF;
+}
+
+.skillsTitle{
+  margin-top: 8%;
+}
+
+#Capa_1{
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+
+.st0 {
+  fill:none;
+  stroke:#FFF;
+  stroke-width:3;
+  stroke-miterlimit:10;  
+}
+
+.st1 {
+  fill:#FFF;
+}
+
+.st2 {
+  fill:none;
+  stroke:#FFF;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+/* -- Triangulo -- */
+#invertedTriangle {
+  fill: #985FA2;
+  stroke: #985FA2;
+  stroke-width: 2;
+  width: 100%;
+  height: 50px;
+}
+
+svg#bigTriangleColor {
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+}
+
+#bigTriangleColor path {
+  fill: #985FA2;
+  stroke: #985FA2;
+  stroke-width: 2;
+}
+.color {
+  background: #985FA2;
+}
+
+/* -- Projects -- */
+.projectsTitle{
+  margin-top: 8%;
+}
 
 .projects img{
   width: 100%;
   margin: 1em;
 }
 
-/*contact*/
-.formulario{
-  margin-top: 5%;
+.foodmap img, .catbook img{
+  width: 70%;
+  margin-left: 5em;
+  margin-top: 4em;
 }
 
-input, textarea{
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #767676;
-  resize: none;
+.description{
+  margin-top: 10%;
 }
 
-input:focus, textarea:focus{
+#fourthSection button{
+  background-color: #985FA2;
+  border-radius: 1em;
+}
+
+#fourthSection button:focus{
   outline: none;
 }
 
-#contact{
-  width: 100%;
+#fourthSection button a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+#fourthSection button a:hover{
+  color: #FCDEFE;
+  text-decoration: none;
+}
+
+/* -- Contact -- */
+.contactTitle{
+  margin-top: 8%;
+}
+
+.fa-envelope, .fa-github, .fa-linkedin-in{
+  margin: 2% 2% 0 2%;
 }
 
 .topBtn{
@@ -62,12 +174,11 @@ input:focus, textarea:focus{
   border-radius: 50%;
   height: 3.5em;
   width: 3.5em;
-  background-color: #000;
-  color: #FFF;
-  -webkit-box-shadow: -1px 9px 11px -2px rgba(0,0,0,0.38);
-  -moz-box-shadow: -1px 9px 11px -2px rgba(0,0,0,0.38);
-  box-shadow: -1px 9px 11px -2px rgba(0,0,0,0.38);
+  border:2px solid transparent;
+  background-color: #ACAEEC;
+  color: #693487;
   transition: all 0.5s;
+  margin-bottom: 3em;
 }
 
 #top:hover{
@@ -76,11 +187,15 @@ input:focus, textarea:focus{
   cursor: pointer;
 }
 
-/* -- main content -- */
+#top:focus{
+  outline: none;
+}
+
+/* -- Contenedor -- */
 .content-container {
   position: relative;
   z-index: 0;
-  padding: 20px;  
+   
   margin: 0 auto;
   overflow: hidden;
   transition: all 300ms ease-in-out;
@@ -88,8 +203,7 @@ input:focus, textarea:focus{
 
 .site-title {
   text-align: center;
-  border-bottom: 1px solid #111111;
-  margin-bottom: 24px;
+  margin-bottom: 6%;
 }
 
 .site-title h1 {
@@ -107,8 +221,7 @@ img {
   margin-bottom: 24px;
 }
 
-/* -- Slideout Sidebar -- */
-
+/* -- Menu lateral -- */
 .slideout-sidebar {
   position: fixed;
   top: 0;
@@ -130,8 +243,9 @@ img {
 .slideout-sidebar ul li {
   cursor: pointer;
   padding: 18px 0;
-  border-bottom: 1px solid rgba(244,244,244,0.4);
-  color: rgba(244,244,244,0.7);
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+  font-size: 1.1em;
 }
 
 .slideout-sidebar ul li:last-child {
@@ -142,8 +256,7 @@ img {
   color: #FFF;
 }
 
-/* -- Menu Icon -- */
-
+/* -- Icono Menu-- */
 #menu-toggle {
   display: none;
 }
@@ -152,9 +265,20 @@ img {
   position: fixed;
   top: 18px;
   left: 40px;
-  font-size: 24px;
+  border: 1px solid #985FA2;
+  border-radius: 50%;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: #985FA2;
+  color: #FFF;
+  font-size: 2em;
   z-index: 1;
   transition: all 300ms ease-in-out;
+}
+
+.menu-icon:hover{
+  cursor: pointer;
+  background-color: #9550A1;
+  border: 1px solid #9550A1;
 }
 
 /*-- The Magic --*/
@@ -170,8 +294,8 @@ img {
   padding-left: 190px;
 }
 
-/* hover effect menu */
-/* Effect 1: Brackets */
+/* -- Efecto hover menu -- */
+/* Efecto Brackets */
 .cl-effect-1::before,
 .cl-effect-1::after {
   display: inline-block;
@@ -207,18 +331,14 @@ img {
   transform: translateX(0px);
 }
 
-/* Footer */
-
+/* -- Footer -- */
 footer{
   color: #FFF;
-  background-color:#000;
+  background-color: #985FA2;
   padding: 2em 0 1em 0;
 }
 
-
-
 /* -- Media Queries -- */
-
 @media (max-width: 991px) {
   
   .content-container {
@@ -228,10 +348,10 @@ footer{
 }
 
 @media (max-width: 767px) {
-  
+
   .content-container {
     max-width: 100%;
-    margin: 30px auto 0;
+    margin: auto 0;
   }
   
   #menu-toggle:checked ~ .content-container {
@@ -256,7 +376,25 @@ footer{
     left: 87%;
     color: #fafafa;
   }
-  
+
+  .aboutTitle{
+    margin-top: 8%;
+  }
+
+  .textAbout{
+    margin-top: 5%;
+  }
+
+  #Capa_1{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+  }
+
+  .description{
+    margin-bottom: 2em;
+  }
+
   @media screen  
     and (max-width: 736px) 
     and (orientation: landscape) {
