@@ -4,83 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+  <!-- pagepiling library -->
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.pagepiling.css" />
   <!-- stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <!-- MENU -->
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-   
-    <!-- HOME -->
-    <section class="content-container container-fluid" id="firstSection">
-      <div class="container">
+<body>  
+  <!-- menu -->
+ 
+  <div id="pagepiling">
+    <!-- home -->
+      <div class="section" id="section1">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="stars1"></div>
+          <div class="stars2"></div>
+          <div class="shooting-stars"></div>
+        </div>
         <div class="row">
-          <div class="col-md-6 text-center greeting">
-            <h2><strong>¡HOLA!</strong></h2>
-            <h1>Soy Camila</h1>
-            <p>Desarrolladora Front End, ve mi trabajo aquí!</p>
-            <button class="btn"><a href="#fourthSection">Proyectos</a></button>
+          <div class="hidden-lg hidden-md hidden-sm col-xs-12 greeting">
+            <h1>Hello</h1>
+            <p>Do yo want to see my work?</p>
+            <button data-menuanchor="page4" class="btn"><a href="#page4">Work</a></button>
           </div>
-          <div class="col-md-6 homeImage">
-            <img src="assets/img/home.png" alt="">
-          </div>          
-        </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="assets/img/home.png"/>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs greeting">
+            <h1>Hello</h1>
+            <p>Do yo want to see my work?</p>
+            <button data-menuanchor="page4" class="btn"><a href="#page4">Work</a></button>
+          </div>
+        </div>        
       </div>
-    </section>
-    <!-- ABOUT -->
-    <section class="content-container container about" id="secondSection">
-      <div class="row site-title aboutTitle">
-        <h1>SOBRE MI</h1>
-      </div>
-      <div class="row content">
-        <div class="col-xs-10 col-xs-offset-1 hidden-lg hidden-md hidden-sm text-justify textAbout">
-          <p> ¡Hola! Mi nombre es Camila, soy desarrolladora Front End y Licenciada en Artes con mención en Artes Plásticas, tengo 25 años y soy una apasionada por el código, el arte, la música, los videojuegos y la literatura.</p>
-          <p>Me defino como una persona creativa, autodidacta, perseverante y curiosa, conceptos que han sido esenciales para desarrollarme como Front End.
-          En mi tiempo libre disfruto los videojuegos, las series, la naturaleza, a mis perritos y aprender cosas nuevas.</p>
-        </div>  
-        <div class="col-lg-6 col-sm-12 me">
-          <img src="assets/img/perfil.png" alt="" class="" />
-        </div>
-        <div class="col-lg-6 hidden-xs text-justify textAbout">
-          <p> ¡Hola! Mi nombre es Camila, soy desarrolladora Front End y Licenciada en Artes con mención en Artes Plásticas, tengo 25 años y soy una apasionada por el código, el arte, la música, los videojuegos y la literatura.</p>
-          <p>Me defino como una persona creativa, autodidacta, perseverante y curiosa, conceptos que han sido esenciales para desarrollarme como Front End.
-          En mi tiempo libre disfruto los videojuegos, las series, la naturaleza, a mis perritos y aprender cosas nuevas.</p>
-        </div>   
-      </div>
-    </section>
-    <!-- SKILLS -->
-    <section class="content-container container-fluid color ss-style-bigtriangle skills" id="thirdSection" >
-      <div class="container">
-        <div class="site-title skillsTitle">
-          <h1>HABILIDADES</h1>
-        </div>
-        <div class="content">
-          <h1></h1>
-          <div class="col-lg-12 col-xs-12">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 col-lg-offset-1">
-               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">    
-                <g>
-                  <path class="st0" d="M55.5,209.9c-0.2-1.2-0.3-176.4-0.1-178.6c0.3-0.1,0.6-0.1,0.9-0.2c0.4,0,0.8,0,1.3,0c25.4,0,50.7,0,76.1,0
-                    c5.6,0,11.3-0.1,16.9,0.5c7.2,0.7,14.4,1.8,21.2,4.5c4,1.6,7.8,3.6,11.1,6.3c6.1,4.9,10,11.2,12,18.7c1.7,6.3,2,12.7,1.5,19.2
-                    c-0.3,3.5-1,6.9-2.1,10.2c-1.9,5.6-5.2,10.2-9.6,14.2c-3.2,2.9-6.8,5.3-10.7,7.3c-0.4,0.2-0.9,0.5-1.5,0.8c0.5,0.2,0.9,0.3,1.2,0.4
-                    c4.9,1.6,9.5,3.7,13.7,6.7c6.8,4.8,11.5,11.3,14.4,19.1c1.5,4,2.4,8.1,2.9,12.3c0.4,4,0.5,8.1,0.2,12.1
-                    c-1.3,15.4-8.5,27.4-21.5,35.8c-6.2,4-13,6.6-20.1,8.3c-3.6,0.8-7.2,1.5-10.8,1.9c-3.3,0.3-6.7,0.6-10,0.6c-28.5,0-57,0-85.4,0
-                    C56.4,209.9,56,209.9,55.5,209.9z M94.7,179.2c0.7,0,1.2,0,1.8,0c13.2,0,26.3,0,39.5,0c3.5,0,7-0.2,10.4-0.9
-                    c3.4-0.6,6.7-1.7,9.6-3.5c5.2-3.1,8.2-7.7,9.2-13.7c0.7-4.4,0.6-8.7-0.3-13c-0.5-2.8-1.5-5.5-3.1-7.9c-1.9-2.9-4.6-5-7.7-6.5
-                    c-4.5-2.3-9.3-3.3-14.2-3.4c-6.1-0.1-12.3-0.1-18.4-0.1c-8.4,0-16.7,0-25.1,0c-0.5,0-1.1-0.1-1.7,0.1
-                    C94.7,146.7,94.7,162.9,94.7,179.2z M94.7,103.4c0.7,0,1.2,0.1,1.8,0.1c12.3,0,24.6,0,36.8,0c2.2,0,4.5-0.2,6.7-0.4
-                    c3.7-0.4,7.1-1.7,10.3-3.6c3.7-2.3,6-5.5,7.2-9.6c1-3.7,1.1-7.4,0.7-11.2c-0.4-3.8-1.8-7.2-4.5-10c-2.3-2.4-5-3.9-8.1-5
-                    c-4.2-1.4-8.5-1.9-12.9-1.9c-12.3-0.1-24.7,0-37,0c-0.3,0-0.6,0.1-1,0.1C94.7,75.7,94.7,89.4,94.7,103.4z"/>
-                </g>
-              </svg>
+      <div class="section container-fluid" id="section2">
+        <div class="perfil container">          
+          <div class="row">
+            <div class="hidden-lg hidden-md hidden-sm col-xs-12 text-justify textAbout">            
+              <h1>THIS IS ME</h1>
+              <p> ¡Hi! My name is Camila, I'm a<strong> Front End</strong> developer and Bachelor of Fine Arts with a mention in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+              <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to develop as Front End.</p>
+              <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p>               
+            </div>            
+            <div class="col-lg-6 col-sm-12 col-xs-10 me">
+              <img src="assets/img/perfil.png" alt="" class="" />
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-6 col-md-5 col-sm-6  hidden-xs text-justify textAbout">            
+              <h1>THIS IS ME</h1>
+              <p> ¡Hi! My name is Camila, I'm a<strong> Front End</strong> developer and Bachelor of Fine Arts with a mention in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+              <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to develop as Front End.</p>
+              <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p>
+              <div class="row hobby hidden-xs">
+                <div class="col-md-2">
+                  <img src="assets/img/forest.png" alt="">
+                </div>
+                <div class="col-md-2">
+                  <img src="assets/img/dog.png" alt="">
+                </div>
+                <div class="col-md-2">
+                  <img src="assets/img/library.png" alt="">
+                </div>
+                <div class="col-md-2">
+                  <img src="assets/img/painting-palette.png" alt="">
+                </div>
+                <div class="col-md-2">
+                  <img src="assets/img/html.png" alt="">
+                </div>
+                <div class="col-md-2">
+                  <img src="assets/img/game-control.png" alt="">
+                </div>
+              </div>              
+            </div>
+          </div> <!-- ./ row -->          
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <div class="">
+          <div class="row">
+            <h1>SKILLS</h1>
+          </div>
+          <div class="col-lg-12 col-xs-12">            
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 col-lg-offset-1">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">
                 <g>
                   <path class="st0" d="M222,120.5c0,29.4,0,58.7,0,88.1c0,3.1-0.8,5.9-2.7,8.3c-2,2.6-4.7,4.3-8,4.8c-0.9,0.2-1.9,0.2-2.9,0.2
@@ -106,7 +114,7 @@
                 </g>
                 </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">            
                 <g>
                   <path class="st0" d="M234.9,6.1c-6.4,70.3-12.7,140.2-19.1,210.4c-8,1.6-15.8,3.1-23.7,4.7c-21.8,4.3-43.6,8.5-65.3,13.2
@@ -124,7 +132,7 @@
                 </g>
               </svg>
             </div> 
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">              
                 <g>
                   <path class="st0" d="M214.3,216.7c-15.6,3.1-30.8,6.2-46,9.2c-14.4,2.9-28.8,5.4-43.2,8.6c-5.8,1.3-11.1-0.5-16.5-1.5
@@ -144,7 +152,24 @@
                 </g>
               </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241"  xml:space="preserve">    
+                <g>
+                  <path class="st0" d="M55.5,209.9c-0.2-1.2-0.3-176.4-0.1-178.6c0.3-0.1,0.6-0.1,0.9-0.2c0.4,0,0.8,0,1.3,0c25.4,0,50.7,0,76.1,0
+                    c5.6,0,11.3-0.1,16.9,0.5c7.2,0.7,14.4,1.8,21.2,4.5c4,1.6,7.8,3.6,11.1,6.3c6.1,4.9,10,11.2,12,18.7c1.7,6.3,2,12.7,1.5,19.2
+                    c-0.3,3.5-1,6.9-2.1,10.2c-1.9,5.6-5.2,10.2-9.6,14.2c-3.2,2.9-6.8,5.3-10.7,7.3c-0.4,0.2-0.9,0.5-1.5,0.8c0.5,0.2,0.9,0.3,1.2,0.4
+                    c4.9,1.6,9.5,3.7,13.7,6.7c6.8,4.8,11.5,11.3,14.4,19.1c1.5,4,2.4,8.1,2.9,12.3c0.4,4,0.5,8.1,0.2,12.1
+                    c-1.3,15.4-8.5,27.4-21.5,35.8c-6.2,4-13,6.6-20.1,8.3c-3.6,0.8-7.2,1.5-10.8,1.9c-3.3,0.3-6.7,0.6-10,0.6c-28.5,0-57,0-85.4,0
+                    C56.4,209.9,56,209.9,55.5,209.9z M94.7,179.2c0.7,0,1.2,0,1.8,0c13.2,0,26.3,0,39.5,0c3.5,0,7-0.2,10.4-0.9
+                    c3.4-0.6,6.7-1.7,9.6-3.5c5.2-3.1,8.2-7.7,9.2-13.7c0.7-4.4,0.6-8.7-0.3-13c-0.5-2.8-1.5-5.5-3.1-7.9c-1.9-2.9-4.6-5-7.7-6.5
+                    c-4.5-2.3-9.3-3.3-14.2-3.4c-6.1-0.1-12.3-0.1-18.4-0.1c-8.4,0-16.7,0-25.1,0c-0.5,0-1.1-0.1-1.7,0.1
+                    C94.7,146.7,94.7,162.9,94.7,179.2z M94.7,103.4c0.7,0,1.2,0.1,1.8,0.1c12.3,0,24.6,0,36.8,0c2.2,0,4.5-0.2,6.7-0.4
+                    c3.7-0.4,7.1-1.7,10.3-3.6c3.7-2.3,6-5.5,7.2-9.6c1-3.7,1.1-7.4,0.7-11.2c-0.4-3.8-1.8-7.2-4.5-10c-2.3-2.4-5-3.9-8.1-5
+                    c-4.2-1.4-8.5-1.9-12.9-1.9c-12.3-0.1-24.7,0-37,0c-0.3,0-0.6,0.1-1,0.1C94.7,75.7,94.7,89.4,94.7,103.4z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">               
                 <g>
                   <path class="st2" d="M120,20.8c4.9,0.6,8.2,3.5,11.4,6.7c26.9,26.9,53.8,53.8,80.7,80.7c3.5,3.5,6.8,7,7.7,12.4
@@ -160,9 +185,7 @@
                 </g>
               </svg>
             </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 col-lg-offset-1">
+            <div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">               
                 <g>
                   <path class="st0" d="M135.4,223.2c-4.3,0-8.5,0-12.8,0c-0.6-0.1-1.2-0.3-1.9-0.4c-3.3-0.5-6.7-0.7-10-1.3
@@ -184,7 +207,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">
                 <g>
                   <path class="st0" d="M53.9,57.7c-0.9,3.6-1.8,7.2-2.5,10.9c-1.8,9-2.1,18-0.9,27.1c2.8,21.4,12.4,39.5,27.2,55
@@ -202,7 +225,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">                
                 <g>
                   <path class="st0" d="M205.4,123.5c0,13.4,0,26.7,0,40.1c0,6-2.6,10.5-7.7,13.5c-23.4,13.5-46.7,27-70.1,40.5
@@ -227,7 +250,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 mobile">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">              
                 <g>
                   <path class="st0" d="M60.6,64.1c0.9-1.4,2-2.8,3.5-3.5c0.7-0.1,1.3-0.1,2-0.1c10.7,0,21.4,0,32.1,0c-0.9,0.8-1.8,1.6-2.5,2.7
@@ -260,7 +283,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">
                 <g>
                   <path class="st0" d="M64.4,153c2.2,5.1,3,10,2.9,15.2C67,185.6,55,200.4,38.1,204c-4.9,1.1-9.8,0.8-14.7-0.6
@@ -297,125 +320,52 @@
               </svg>
             </div>
           </div>
-        </div>
-      </div>      
-    </section>
-    <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 102" preserveAspectRatio="none">
-      <path d="M0 0 L50 100 L100 0 Z" />
-    </svg>
-    <!-- PROJECTS -->
-    <section class="content-container container" id="fourthSection">
-      <div class="row site-title projectsTitle">
-        <h1>Proyectos</h1>
+        </div>          
       </div>
-      <div class="row content">
-        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12  projects">
-          <img src="assets/img/IP_FREELANCE.png" alt="">
-        </div>
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 col-md-offset-1 text-justify">
-          <h2>Freelancer</h2>
-          <p>Réplica del template Freelancer de Bootstrap, utilizando HTML y CSS</p>
-          <button class="btn"><a href="https://github.com/camilabelen/freelancer">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/freelancer/">DEMO</a></button>
+      <div class="section" id="section4">
+        <div class="intro">
+          <h1>PROJECTS</h1>
+          <div class="row content container">
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12  projects">
+              <img src="assets/img/IP_FREELANCE.png" alt="">
+            </div>
+            <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 col-md-offset-1 text-justify">
+              <h2>Freelancer</h2>
+              <p>Réplica del template Freelancer de Bootstrap, utilizando HTML y CSS</p>
+              <button class="btn"><a href="https://github.com/camilabelen/freelancer">CÓDIGO</a></button>
+              <button class="btn"><a href="https://camilabelen.github.io/freelancer/">DEMO</a></button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row content">
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 text-justify hidden-xs">
-          <h2>Labcar</h2>
-          <p>Proyecto realizado con el framework Bootstrap, con versión web y mobile</p>
-          <button class="btn"><a href="https://github.com/camilabelen/lab-car-boilerplate">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/lab-car-boilerplate/">DEMO</a></button>
+      <div class="section" id="section5">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="stars1"></div>
+          <div class="stars2"></div>
+          <div class="shooting-stars"></div>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 col-lg-offset-1 projects">
-          <img src="assets/img/MAC_labcar.png" alt="">
+        <div class="row site-title contactTitle">
+          <h1>GET IN TOUCH</h1>
         </div>
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 text-justify hidden-lg hidden-md hidden-sm">
-          <h2>Labcar</h2>
-          <p>Proyecto realizado con el framework Bootstrap, con versión web y mobile</p>
-          <button class="btn"><a href="https://github.com/camilabelen/lab-car-boilerplate">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/lab-car-boilerplate/">DEMO</a></button>
+        <div class="row content contact text-center">
+          <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 contactIcons shake-opacity">
+            <a href="mailto:ccornejoss@gmail.com"><img src="assets/img/rocket.png"></a>            
+          </div>        
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="https://github.com/camilabelen"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/camila-cornejos/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="row content">
-        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 catbook projects">
-          <img src="assets/img/CATBOOK_OK.png" alt="">
-        </div>
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 col-md-offset-1 text-justify ">
-          <h2>Catbook</h2>
-          <p>La red social Catbook es producto del trabajo colaborativo, con uso de Firebase, jQuery y Bootstrap.</p>
-          <button class="btn"><a href="https://github.com/camilabelen/red-social">CÓDIGO</a></button>
-          <button class="btn"><a href="https://sabrinavillalobos.github.io/red-social/">DEMO</a></button>
-        </div>
-      </div>
-      <div class="row content">
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 text-justify hidden-xs">
-          <h2>Art Gallery</h2>
-          <p>Art Gallery es un trabajo colaborativo que consiste en una página web para buscar y guardar obras de arte, en este proyecto se hizo uso de la API del Museo de Arte de Harvard, jQuery, Bootstrap y Firebase.</p>
-          <button class="btn"><a href="https://github.com/camilabelen/art-Gallery">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/art-Gallery/">DEMO</a></button>
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 col-md-offset-1 projects">
-          <img src="assets/img/IPAD_GALLERY.png" alt="">
-        </div>
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 text-justify hidden-lg hidden-md hidden-sm">
-          <h2>Art Gallery</h2>
-          <p>Art Gallery es un trabajo colaborativo que consiste en una página web para buscar y guardar obras de arte, en este proyecto se hizo uso de la API del Museo de Arte de Harvard, jQuery, Bootstrap y Firebase.</p>
-          <button class="btn"><a href="https://github.com/camilabelen/art-Gallery">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/art-Gallery/">DEMO</a></button>
-        </div>
-      </div>
-      <div class="row content">
-        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 catbook projects">
-          <img src="assets/img/ip_foodmap.png" alt="">
-        </div>
-        <div class="description col-lg-5 col-md-5 col-sm-6 col-xs-12 col-md-offset-1 text-justify">
-          <h2>FoodMap</h2>
-          <p>FoodMap es un proyecto hecho solo en su versión mobile, en el que se hizo uso de Materialize y jQuery</p>
-          <button class="btn"><a href="https://github.com/camilabelen/foodmap">CÓDIGO</a></button>
-          <button class="btn"><a href="https://camilabelen.github.io/foodmap/">DEMO</a></button>
-        </div>
-      </div>      
-    </section>
-    <!-- CONTACT -->
-    <section class="content-container container" id="fifthSection">
-      <div class="row site-title contactTitle">
-        <h1>CONTACTO</h1>
-      </div>
-      <div class="row content contact text-center">
-        <div class="col-lg-12 contactIcons">
-          <a href="mailto:ccornejoss@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
-          <a href="https://github.com/camilabelen"><i class="fab fa-github fa-3x"></i></a>
-          <a href="https://www.linkedin.com/in/camila-cornejos/"><i class="fab fa-linkedin-in fa-3x"></i></a>
-        </div>
-      </div>
-      <!-- BOTON PARA VOLVER AL INICIO -->
-      <div class="row">
-        <div class="col-md-2 col-md-offset-5 text-center topBtn 
-        hi-icon-effect-3 hi-icon-effect-3a">
-          <button class="btn" id="top"><i class="fas fa-angle-up fa-2x"></i></button>
-        </div>
-      </div>      
-    </section> 
-  <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-          <p>Developed by Camila Cornejos | Laboratoria</p>
-        </div>
-      </div>
-    </div>
-  </footer>
   
-  <!-- LISTA DEL MENU -->
-  <div class="slideout-sidebar">
-    <ul id="menu">
-      <li><a href="#firstSection" title="First Section" class="cl-effect-1">Home</a></li>
-      <li><a href="#secondSection" title="SecondSection" class="cl-effect-1">This is me</a></li>
-      <li><a href="#thirdSection" title="thirdSection" class="cl-effect-1">My Skills</a></li>
-      <li data-menuanchor="fourthSection"><a href="#fourthSection" title="FourthSection" class="cl-effect-1">My Proyects</a></li>
-      <li><a href="#fifthSection" title="FifthSection" class="cl-effect-1">Contact me</a></li>
-    </ul>
-  </div> 
+        <div class="container">
+          <div class="footer row text-center">        
+            <p>Developed by Camila Cornejos | Laboratoria</p>
+          </div>
+        </div>        
+      </div>
+      
+  </div>
   <!-- script -->
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -423,12 +373,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- fontawesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <!-- biblioteca walkway -->
-  <script src="https://cdn.jsdelivr.net/walkway/0.0.7/walkway.min.js"></script>
-  <!-- biblioteca smoove -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+  <!-- pagepiling library -->
+  <script type="text/javascript" src="assets/js/jquery.pagepiling.js"></script>
+  
   <!-- main.js -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
-
