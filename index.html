@@ -15,7 +15,17 @@
 </head>
 <body>  
   <!-- menu -->
- 
+  <div>
+    <nav class="navbar-left">  
+      <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">HOME</a></li>
+        <li data-menuanchor="page2"><a href="#page2">WHO</a></li>
+        <li data-menuanchor="page3"><a href="#page3">SKILLS</a></li>
+        <li data-menuanchor="page4"><a href="#page4">PROJECTS</a></li>
+        <li data-menuanchor="page5"><a href="#page4">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
   <div id="pagepiling">
     <!-- home -->
       <div class="section" id="section1">
@@ -32,7 +42,8 @@
             <button data-menuanchor="page4" class="btn"><a href="#page4">Work</a></button>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="assets/img/home.png"/>
+            <img id="pc" src="assets/img/camila_con_pc.png"/>
+            <img id="space" src="assets/img/camila_fondo_galaxia.png"/>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs greeting">
             <h1>Hello</h1>
@@ -83,11 +94,11 @@
         </div>
       </div>
       <div class="section" id="section3">
-        <div class="">
+        <div class="container">
           <div class="row">
             <h1>SKILLS</h1>
           </div>
-          <div class="col-lg-12 col-xs-12">            
+          <div class="col-lg-12 col-xs-12" id="SVG">           
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 col-lg-offset-1">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 241" style="enable-background:new 0 0 240 241;" xml:space="preserve">
                 <g>
@@ -350,21 +361,19 @@
         </div>
         <div class="row content contact text-center">
           <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 contactIcons shake-opacity">
-            <a href="mailto:ccornejoss@gmail.com"><img src="assets/img/rocket.png"></a>            
+            <a href="mailto:ccornejoss@gmail.com"><img src="assets/img/rocket.png"></a>           
           </div>        
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <a href="https://github.com/camilabelen"><i class="fab fa-github fa-3x"></i></a>
             <a href="https://www.linkedin.com/in/camila-cornejos/"><i class="fab fa-linkedin-in fa-3x"></i></a>
           </div>
-        </div>
-  
+        </div>  
         <div class="container">
           <div class="footer row text-center">        
             <p>Developed by Camila Cornejos | Laboratoria</p>
           </div>
         </div>        
-      </div>
-      
+      </div>      
   </div>
   <!-- script -->
   <!-- jquery -->
@@ -375,7 +384,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- pagepiling library -->
   <script type="text/javascript" src="assets/js/jquery.pagepiling.js"></script>
-  
+  <!-- biblioteca walkway -->
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>  
   <!-- main.js -->
   <script src="assets/js/index.js"></script>
 </body>

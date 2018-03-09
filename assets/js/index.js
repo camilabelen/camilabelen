@@ -22,6 +22,6 @@ $(document).ready(function() {
         $('#pp-nav').addClass('custom');
       }
     }
-  });
+  });  
   
 })
