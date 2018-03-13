@@ -3,6 +3,7 @@
   * --------------------------------------- */
 body{
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
    /**/
@@ -133,7 +134,7 @@ body{
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2560px) translateX(-2560px);
+    transform: translateY(-1560px) translateX(-1560px);
   }
 }
 @keyframes animShootingStar {
@@ -143,7 +144,7 @@ body{
     height: 5px;
   }
   to {
-    transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
+    transform: translateY(-1560px) translateX(-1560px) rotate(-45deg);
     opacity: 1;
     height: 800px;
   }
@@ -152,6 +153,7 @@ body{
  * --------------------------------------- */
 .section{
   text-align: center;
+  height: 100vh;
 }
 
 /* Menu
@@ -164,10 +166,6 @@ body{
 #menu li:first-child{
   margin-left: 68%;
 }
-#menu li a{
-  text-decoration:none;
-  color: #000;
-}
 #menu li:hover{
   color: #000;
 }
@@ -175,19 +173,23 @@ body{
   color: #000;
 }
 #menu li a{
+  text-decoration: none;
+  color: #000;
   display:block;
   color: #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em;
 }
 #menu li.active a{
-  color: #666;
+  color: #D382C8;
+  text-decoration: line-through;
 }
 #menu{
   position:fixed;  
   height: 4em;
   z-index: 70;
   width: 100%; 
-  background:#fff;
-  background: linear-gradient(to bottom, rgb(27, 41, 71), rgba(127, 102, 153, 0));
+  background-color: rgba(46, 18, 68, 0.1);
 }
 .navbar-default {
   background-color: rgba(46, 18, 68, 0.6);
@@ -204,6 +206,9 @@ body{
 }
 #space{
   position: relative;
+  margin-top: 0.5em;  
+  transition: all 3s ease-in-out;
+  animation: spaceFloat 5s infinite;
 }
 #pc{
   position:absolute;
@@ -212,7 +217,17 @@ body{
   transition: all 2s ease-in-out;
   animation: floating 2s infinite;
 }
-
+@keyframes spaceFloat {
+  0% {
+    top: 0.5em;
+  }
+  50% {
+    top: 2em;
+  }
+  100% {
+   top: 0.5em;
+  }
+}
 @keyframes floating {
   0% {
     top: 0;
@@ -227,23 +242,32 @@ body{
 
 /* Section 2
  * --------------------------------------- */
-#section2 h1,
+#section2 h1{
+  text-align: left;
+  z-index: 3;
+  color: #323232;
+}
 #section2 p{
+  color: #FFFFFF;
   z-index: 3;
 }
 #section2{
   color: #000000;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
-.me img {
+.me img{
   width: 100%;
   z-index: 100;
+  margin-bottom: -10em;
 }
 .perfil p{
   width: 90%;
 }
 .perfil h1{
   text-align: center;
-
 }
 .hobby img{
   width: 100%;
@@ -253,54 +277,69 @@ body{
 /* Section 3
  * --------------------------------------- */
 #section3{
-  color: #FFFFFF;
-  background-color: #75517D !important;
+  color: #5E3980;
 }
 
-#Capa_1{
-  height: 10em;
-  margin-top: 10%;
-  margin-bottom: 25%;
-}
-
-.st0 {
-  fill:none;
-  stroke:#FFF;
-  stroke-width:3;
-  stroke-miterlimit:10;  
-}
-
-.st1 {
-  fill:#FFF;
-}
-
-.st2 {
-  fill:none;
-  stroke:#FFF;
-  stroke-width:3;
-  stroke-linecap:round;
-  stroke-miterlimit:10;
+#section3 img{
+  margin: 3em 0 3em 0;
+  width: 100%;
 }
 
 /* Section 4
  * --------------------------------------- */
-
-#section4{
+#section4, #section5, #section6, #section7{
   background-color: #FFFFFF !important;
 }
 .projects img{
-  width: 90%;
+  width: 100%;
+}
+.description{
+  margin-top: 10em;
+}
+#section4 button{
+
 }
 
 /* Section 5
  * --------------------------------------- */
-#section5{
-background: linear-gradient(to bottom, rgba(255,241,184,1) 0%, rgba(214,120,151,1) 29%, rgba(155,116,207,1) 59%, rgba(9,57,116,1) 100%);  color: #FFF;
+#section8{
+background: linear-gradient(to bottom, rgba(255,241,184,1) 0%, rgba(255,143,177,1) 29%, rgba(117,81,125,1) 65%, rgba(27,41,71,1) 100%);
+color: #FFF;
 }
 .contactIcons img{
-  margin-top: 5em;
-  width: 100%;
+  width: 100%;  
 }
+.contactIcons{
+  margin-top: 0.5em;  
+  transition: all 3s ease-in-out;
+  animation: ufo 5s infinite;
+}
+@keyframes ufo {
+  0% {
+    top: 0.5em;
+  }
+  50% {
+    top: 2em;
+  }
+  100% {
+   top: 0.5em;
+  }
+}
+#ufo:hover{
+  cursor:pointer;
+}
+ /* Tooltip */
+.ufoContact + .tooltip > .tooltip-inner {
+  background-color: #7E519B; 
+  color: #FFFFFF; 
+  padding: 0.5em;
+  font-size: 1em;
+}
+/* Tooltip a la derecha */
+.ufoContact + .tooltip.right > .tooltip-arrow {
+  border-right: 5px solid #7E519B;
+}
+
 .fa-github, 
 .fa-linkedin-in{
   color: #FFF;
@@ -319,7 +358,74 @@ span{
 }
 
 /*media queries*/
-@media (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  section{
+    height: 100vh;
+  }
+  #menu li:first-child{
+    margin-left: 0;
+  }
+  #menu li{
+    margin: ;
+  }
+  /*seccion 1*/
+  #section1 h1{
+    padding: 0;
+    text-align: center;
+    font-size: 7em;
+    margin-top: 0;
+  }
+  #section1 p{
+    padding: 0;
+    text-align: center;    
+    margin-top: 0;
+  }
+  #section1 button{    
+    text-align: center;    
+    margin-left: 42%;
+  }
+  #section1 img{
+    width: 90%;
+    margin-top: 2em;
+  }
+
+  /*seccion 2*/
+  #section2 h1{
+    text-align: left;
+    margin-top: -25px;
+  }
+  #section2 p{
+    text-align: justify;
+  }  
+  .me img{
+    margin: 1em 0 -6.6em 0;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  #section2 span{
+    color: #5B5B5B;
+    font-weight: 900;
+  }
+  
+  /*seccion 3*/
+  .mobile{
+    margin-left: 5.5em;
+  }
+
+  /*seccion 4*/
+
+  /*seccion 8*/
+  .fa-github, 
+  .fa-linkedin-in{
+    margin: 3em 0.5em 0 0.5em;
+  }
+  .footer{
+    margin-top: 4em;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
   section{
     height: 100vh;
   }
@@ -346,21 +452,209 @@ span{
 
   /*seccion 2*/  
   .me img{
-    margin: 1.6em 0 -6.6em 0;
+    margin: 1.6em 0 -10.6em 0;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  #section2 h1{
+    font-size: 2em;
+  }
+  
+  /*seccion 3*/  
+  .mobile{
+    margin-left: 5.5em;
+  }
+
+  /*seccion 4*/
+  .description{
+    margin-top: 0;
+    margin-left: 8%;
+  }
+  /*seccion 8*/
+  .contactIcons img{
+    width: 100%;
+  }
+  .fa-github, 
+  .fa-linkedin-in{
+    margin: 2.8em 0.5em 0 0.5em;
+  }
+  .footer{
+    margin-top: 4em;
+  }
+} 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+  section{
+    height: 100vh;
+  }
+  /*seccion 1*/
+  #section1 h1{
+    padding: 0;
+    text-align: center;
+    font-size: 11em;
+    margin-top: 0;
+  }
+  #section1 p{
+    padding: 0;
+    text-align: center;    
+    margin-top: 0;
+  }
+  #section1 button{    
+    text-align: center;    
+    margin-left: 42%;
+  }
+  #section1 img{
+    width: 90%;
+    margin-top: 2em;
+  }
+  #section1 p{
+    font-size: 1.8em;
+  }
+
+  /*seccion 2*/
+  #section2 h1{
+    font-size: 4em;
+    margin-left: 10%;
+  }
+  #section2 p{
+    font-size: 1.8em;
+    margin-left: 10%;
+    text-align: justify;
+  }  
+  .me img{
+    margin: 1.6em 0 -8.5em 5em;
     width: 100%;
     vertical-align: bottom;
   }
   
   /*seccion 3*/
-  #Capa_1{
-    width: 100%;
-    height: 50%;
+  #section3 h1{
+    font-size: 3em;
   }
   .mobile{
-    margin-left: 6.5em;
+    margin-left: 25%;
   }
 
-  /*seccion 4*/
+  /*seccion 4, 5, 6, 7*/
+  #section4 h1{
+    font-size: 3em;
+  }
+  .projects img{
+    width: 100%;
+  }
+  .description{
+    margin-top: 0;
+  }
+  .description h2{
+    font-size: 2.5em;
+    margin-left: 10%;
+  }
+  .description p{
+    font-size: 1.8em;
+    margin-left: 10%;
+  }
+  .code{    
+    margin-left: 10%;
+  }
+  .description button{
+    font-size: 1.8em;
+  }
 
-  /*seccion 5*/
+  /*seccion 8*/
+  #section8 h1{
+    font-size: 3em;
+  }
+  .contactIcons img{
+    width: 100%;
+  }
+  .fa-github, 
+  .fa-linkedin-in{
+    margin: 2em 0.5em 0 0.5em;
+    font-size: 5em;
+  }
+  .footer{
+    margin-top: 8%;
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px){
+  /*seccion 1*/
+  #section1 h1{
+    padding: 0;
+    text-align: center;
+    font-size: 11em;
+    margin-top: 0;
+  }
+  #section1 p{
+    padding: 0;
+    text-align: center;    
+    margin-top: 0;
+  }
+  #section1 button{    
+    text-align: center;    
+    margin-left: 42%;
+  }
+  #section1 img{
+    width: 90%;
+    margin-top: 2em;
+  }
+  #section1 p{
+    font-size: 1.8em;
+  }
+
+  /*seccion 2*/
+  #section2 h1{
+    font-size: 3em;
+    margin-left: 10%;
+  }
+  #section2 p{
+    font-size: 1.5em;
+    margin-left: 10%;
+    text-align: justify;
+  }  
+  .me img{
+    margin: 10em 0 -400px 0;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  
+  /*seccion 3*/
+  #section3 h1{
+    font-size: 3em;
+  }
+  .mobile{
+    margin-left: 25%;
+  }
+
+   /*seccion 4, 5, 6, 7*/
+  #section4 h1{
+    font-size: 3em;
+  }
+  .projects img{
+    width: 100%;
+  }
+  .description h2{
+    font-size: 2.5em;
+  }
+  .description p{
+    font-size: 1.5em;
+  }
+
+  /*seccion 8*/
+  #section8 h1{
+    font-size: 3em;
+  }
+  .contactIcons img{
+    width: 100%;
+  }
+  .fa-github, 
+  .fa-linkedin-in{
+    margin: 3em 0.5em 0 0.5em;
+    font-size: 5.5em;
+  }
+  .footer{
+    margin-top: 10%;
+    font-size: 1.5em;
+  }
 }
