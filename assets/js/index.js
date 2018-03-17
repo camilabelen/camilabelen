@@ -163,7 +163,7 @@ $(document).ready(function() {
         $('.contactTitle h1').addClass('animated fadeIn');
         // navecita
         $('.contactIcons').html('');
-        $('.contactIcons').append(`<a id="ufito" class="ufoContact" href="mailto:ccornejoss@gmail.com" data-toggle="tooltip" data-placement="right" title="Write me: ccornejoss@gmail.com"><img id="ufo" src="assets/img/ufo.png"></a>`)
+        $('.contactIcons').append(`<a id="ufito" class="ufoContact" href="mailto:ccornejoss@gmail.com" data-toggle="tooltip" data-placement="right" title="Write me: ccornejoss@gmail.com"><img id="ufo" src="assets/img/UFO.png"></a>`)
         $('#ufo').addClass('animated zoomInRight');
         $('[data-toggle="tooltip"]').tooltip();
         // github y linkedin

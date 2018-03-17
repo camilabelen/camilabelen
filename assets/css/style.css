@@ -160,12 +160,9 @@ body{
  * --------------------------------------- */
 #menu li {
   display:inline-block;
-  margin: 10px;
   color: #000;
 }
-#menu li:first-child{
-  margin-left: 68%;
-}
+
 #menu li:hover{
   color: #000;
 }
@@ -178,14 +175,14 @@ body{
   display:block;
   color: #FFFFFF;
   border-radius: 1em;
-  padding: 0.5em;
+   padding: 0.8em;
 }
 #menu li.active a{
   color: #D382C8;
   text-decoration: line-through;
 }
 #menu{
-  position:fixed;  
+  position: fixed;  
   height: 4em;
   z-index: 70;
   width: 100%; 
@@ -464,11 +461,14 @@ span{
   .mobile{
     margin-left: 5.5em;
   }
-
-  /*seccion 4*/
+  /*proyectos*/
   .description{
     margin-top: 0;
     margin-left: 8%;
+    font-size: 1em;
+  }
+  .projects{
+    margin: 0.5em;
   }
   /*seccion 8*/
   .contactIcons img{
@@ -486,6 +486,10 @@ span{
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
   section{
     height: 100vh;
+  }
+  #menu{
+    font-size: 1.2em;
+    margin-left: 30%;
   }
   /*seccion 1*/
   #section1 h1{
@@ -513,16 +517,16 @@ span{
 
   /*seccion 2*/
   #section2 h1{
-    font-size: 4em;
+    font-size: 3em;
     margin-left: 10%;
   }
   #section2 p{
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-left: 10%;
     text-align: justify;
   }  
   .me img{
-    margin: 1.6em 0 -8.5em 5em;
+    margin: 1.6em 0 -13.5em 5em;
     width: 100%;
     vertical-align: bottom;
   }
@@ -546,11 +550,11 @@ span{
     margin-top: 0;
   }
   .description h2{
-    font-size: 2.5em;
+    font-size: 2em;
     margin-left: 10%;
   }
   .description p{
-    font-size: 1.8em;
+    font-size: 1em;
     margin-left: 10%;
   }
   .code{    
@@ -570,91 +574,10 @@ span{
   .fa-github, 
   .fa-linkedin-in{
     margin: 2em 0.5em 0 0.5em;
-    font-size: 5em;
+    font-size: 4em;
   }
   .footer{
     margin-top: 8%;
-    font-size: 1.8em;
-  }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px){
-  /*seccion 1*/
-  #section1 h1{
-    padding: 0;
-    text-align: center;
-    font-size: 11em;
-    margin-top: 0;
-  }
-  #section1 p{
-    padding: 0;
-    text-align: center;    
-    margin-top: 0;
-  }
-  #section1 button{    
-    text-align: center;    
-    margin-left: 42%;
-  }
-  #section1 img{
-    width: 90%;
-    margin-top: 2em;
-  }
-  #section1 p{
-    font-size: 1.8em;
-  }
-
-  /*seccion 2*/
-  #section2 h1{
-    font-size: 3em;
-    margin-left: 10%;
-  }
-  #section2 p{
-    font-size: 1.5em;
-    margin-left: 10%;
-    text-align: justify;
-  }  
-  .me img{
-    margin: 10em 0 -400px 0;
-    width: 100%;
-    vertical-align: bottom;
-  }
-  
-  /*seccion 3*/
-  #section3 h1{
-    font-size: 3em;
-  }
-  .mobile{
-    margin-left: 25%;
-  }
-
-   /*seccion 4, 5, 6, 7*/
-  #section4 h1{
-    font-size: 3em;
-  }
-  .projects img{
-    width: 100%;
-  }
-  .description h2{
-    font-size: 2.5em;
-  }
-  .description p{
-    font-size: 1.5em;
-  }
-
-  /*seccion 8*/
-  #section8 h1{
-    font-size: 3em;
-  }
-  .contactIcons img{
-    width: 100%;
-  }
-  .fa-github, 
-  .fa-linkedin-in{
-    margin: 3em 0.5em 0 0.5em;
-    font-size: 5.5em;
-  }
-  .footer{
-    margin-top: 10%;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
