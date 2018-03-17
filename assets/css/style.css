@@ -293,8 +293,20 @@ body{
 .description{
   margin-top: 10em;
 }
-#section4 button{
-
+.myWork button{
+  background-color: #985FA2;
+  border-radius: 1em;
+}
+.myWork button:focus{
+  outline: none;
+}
+.myWork button a{
+  color: #FFF;
+  text-decoration: none;
+}
+.myWork button a:hover{
+  color: #FCDEFE;
+  text-decoration: none;
 }
 
 /* Section 5
@@ -369,7 +381,7 @@ span{
   #section1 h1{
     padding: 0;
     text-align: center;
-    font-size: 7em;
+    font-size: 6em;
     margin-top: 0;
   }
   #section1 p{
@@ -430,7 +442,7 @@ span{
   #section1 h1{
     padding: 0;
     text-align: center;
-    font-size: 7em;
+    font-size: 6em;
     margin-top: 0;
   }
   #section1 p{
