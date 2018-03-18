@@ -168,8 +168,8 @@ $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
         // github y linkedin
         $('.RRSS').html('');
-        $('.RRSS').append(`<a id="github" href="https://github.com/camilabelen"><i class="fab fa-github fa-3x"></i></a>
-            <a id="linkedin" href="https://www.linkedin.com/in/camila-cornejos/"><i class="fab fa-linkedin-in fa-3x"></i></a>`)
+        $('.RRSS').append(`<a id="github" href="https://github.com/camilabelen"><span class="icon-github"></span></i></a>
+            <a id="linkedin" href="https://www.linkedin.com/in/camila-cornejos/"><span class="icon-linkedin2"></span></i></a>`)
         $('.RRSS').addClass('animated zoomIn');
         // footer
         $('.footer').html('');

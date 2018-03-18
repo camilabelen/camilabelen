@@ -175,7 +175,7 @@ body{
   display:block;
   color: #FFFFFF;
   border-radius: 1em;
-   padding: 0.8em;
+  padding: 0.8em;
 }
 #menu li.active a{
   color: #D382C8;
@@ -303,6 +303,7 @@ body{
 .myWork button a{
   color: #FFF;
   text-decoration: none;
+  font-size: 0.8em;
 }
 .myWork button a:hover{
   color: #FCDEFE;
@@ -349,10 +350,11 @@ color: #FFF;
   border-right: 5px solid #7E519B;
 }
 
-.fa-github, 
-.fa-linkedin-in{
+.icon-github, 
+.icon-linkedin2{
   color: #FFF;
   margin: 3em 0.5em 0 0.5em;
+  font-size: 3em;
 }
 .footer{
   margin-top: 7em;
@@ -367,6 +369,72 @@ span{
 }
 
 /*media queries*/
+@media only screen and (max-width: 320px) {  
+ section{
+    height: 100vh;
+  }
+  #menu li{
+    margin: ;
+  }
+  /*seccion 1*/
+  #section1 h1{
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0;
+  }
+  #section1 p{
+    padding: 0;
+    text-align: center;    
+    margin-top: 0;
+    font-size: 0.8em;
+  }
+  #section1 button{    
+    text-align: center;    
+    margin-left: 42%;
+  }
+  #section1 img{
+    width: 80%;
+    margin-top: 1em;
+  }
+
+  /*seccion 2*/
+  #section2 h1{
+    text-align: left;
+    margin-top: -50px;
+  }
+  #section2 p{
+    font-size: 0.8em;
+    text-align: justify;
+  }  
+  .me img{
+    margin: 1em 0 -6.6em 0;
+    width: 100%;
+    vertical-align: bottom;
+  }
+  #section2 span{
+    color: #5B5B5B;
+    font-weight: 900;
+  }
+  
+  /*seccion 3*/
+  .mobile{
+    margin-left: 5.5em;
+  }
+
+  /*seccion 4,5,6,7*/
+
+  /*seccion 8*/
+  .fa-github, 
+  .fa-linkedin-in{
+    margin: 2em 0.5em 0 0.5em;
+    font-size: 3em;
+  }
+  .footer{
+    margin-top: 2em;
+
+  }
+}
 @media only screen and (max-width: 600px) {
   section{
     height: 100vh;
@@ -388,6 +456,7 @@ span{
     padding: 0;
     text-align: center;    
     margin-top: 0;
+    font-size: 1em;
   }
   #section1 button{    
     text-align: center;    
@@ -401,7 +470,7 @@ span{
   /*seccion 2*/
   #section2 h1{
     text-align: left;
-    margin-top: -25px;
+    margin-top: -45px;
   }
   #section2 p{
     text-align: justify;
@@ -424,13 +493,13 @@ span{
   /*seccion 4*/
 
   /*seccion 8*/
-  .fa-github, 
-  .fa-linkedin-in{
+  .icon-github, 
+  .icon-linkedin2{
     margin: 3em 0.5em 0 0.5em;
+    font-size: 3em;
   }
   .footer{
     margin-top: 4em;
-
   }
 }
 
@@ -438,25 +507,37 @@ span{
   section{
     height: 100vh;
   }
+  #menu{
+    height: 3em;
+  }
+  #menu span{
+    font-size: 1.5em;
+  }
+  #menu li.active a{
+    color: #D382C8;
+    text-decoration: none;
+  }
   /*seccion 1*/
   #section1 h1{
     padding: 0;
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     margin-top: 0;
+    margin-bottom: 0;
   }
   #section1 p{
     padding: 0;
     text-align: center;    
-    margin-top: 0;
+    font-size: 0.9em;
   }
   #section1 button{    
     text-align: center;    
     margin-left: 42%;
+    font-size: 0.9em;
   }
   #section1 img{
-    width: 90%;
-    margin-top: 2em;
+    width: 80%;
+    margin-top: 1em;
   }
 
   /*seccion 2*/  
@@ -464,6 +545,7 @@ span{
     margin: 1.6em 0 -10.6em 0;
     width: 100%;
     vertical-align: bottom;
+    margin-left: 20%;
   }
   #section2 h1{
     font-size: 2em;
@@ -473,25 +555,47 @@ span{
   .mobile{
     margin-left: 5.5em;
   }
-  /*proyectos*/
+  .skillTitle h1{
+    font-size: 2em;
+  }
+
+    /*proyectos*/
+  .myWork h1{
+    font-size: 2em;
+  }
   .description{
     margin-top: 0;
     margin-left: 8%;
-    font-size: 1em;
+    font-size: 0.8em;
+  }
+  .description h2{
+    font-size: 1.5em;
   }
   .projects{
     margin: 0.5em;
   }
+  .myWork button{
+    padding: 0 0.5em 0 0.5em;
+  }
   /*seccion 8*/
+  .contactTitle h1{
+    font-size: 2em;
+  }
   .contactIcons img{
+    margin-top: 0;
     width: 100%;
   }
-  .fa-github, 
-  .fa-linkedin-in{
-    margin: 2.8em 0.5em 0 0.5em;
+  .RRSS{
+    margin-top: 5em;
+  }
+  .icon-github, 
+  .icon-linkedin2{
+    margin: 3em 0.5em 0 0.5em;
+    font-size: 2em;
   }
   .footer{
-    margin-top: 4em;
+    margin-top: 3em;
+    font-size: 0.8em;
   }
 } 
 
@@ -499,7 +603,7 @@ span{
   section{
     height: 100vh;
   }
-  #menu{
+  #menu ul li{
     font-size: 1.2em;
     margin-left: 30%;
   }
@@ -566,7 +670,7 @@ span{
     margin-left: 10%;
   }
   .description p{
-    font-size: 1em;
+    font-size: 1.3em;
     margin-left: 10%;
   }
   .code{    
@@ -583,8 +687,8 @@ span{
   .contactIcons img{
     width: 100%;
   }
-  .fa-github, 
-  .fa-linkedin-in{
+  .icon-github, 
+  .icon-linkedin2{
     margin: 2em 0.5em 0 0.5em;
     font-size: 4em;
   }
