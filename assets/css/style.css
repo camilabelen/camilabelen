@@ -489,17 +489,25 @@ span{
   .mobile{
     margin-left: 5.5em;
   }
-
-  /*seccion 4*/
+  /* seccion 4,5,6,7*/
+  #section4 h1{
+    margin-top: -20px;
+  }
+  #textL{
+    margin-top: -20px;
+  }
 
   /*seccion 8*/
+  #section8 h1{
+    margin-top: -20px;
+  }
   .icon-github, 
   .icon-linkedin2{
     margin: 3em 0.5em 0 0.5em;
     font-size: 3em;
   }
   .footer{
-    margin-top: 4em;
+    margin-top: 3em;
   }
 }
 
@@ -560,9 +568,8 @@ span{
     font-size: 2em;
   }
 
-    /*proyectos*/
+  /*proyectos*/
   .myWork h1{
-    margin-top: -20px;
     font-size: 2em;
   }
   .description{
@@ -573,11 +580,15 @@ span{
   .description h2{
     font-size: 1.5em;
   }
+  #textL{
+    margin-top: -20px;
+  }
   .projects{
     margin: 0.5em;
   }
   .myWork button{
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 0.8em 0 0.8em;
+    font-size: 1.2em;
   }
   /*seccion 8*/
   .contactTitle h1{
@@ -690,10 +701,13 @@ span{
   .contactIcons img{
     width: 100%;
   }
+  .RRSS{
+    margin-top: 3em;
+  }
   .icon-github, 
   .icon-linkedin2{
-    margin: 2em 0.5em 0 0.5em;
-    font-size: 4em;
+    margin: 1em 0.5em 0 0.5em;
+    font-size: 3.5em;
   }
   .footer{
     margin-top: 8%;
