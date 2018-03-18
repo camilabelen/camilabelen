@@ -549,6 +549,7 @@ span{
   }
   #section2 h1{
     font-size: 2em;
+    margin-top: -40px;
   }
   
   /*seccion 3*/  
@@ -561,12 +562,13 @@ span{
 
     /*proyectos*/
   .myWork h1{
+    margin-top: -20px;
     font-size: 2em;
   }
   .description{
     margin-top: 0;
     margin-left: 8%;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .description h2{
     font-size: 1.5em;
@@ -580,6 +582,7 @@ span{
   /*seccion 8*/
   .contactTitle h1{
     font-size: 2em;
+    margin-top: -20px;
   }
   .contactIcons img{
     margin-top: 0;
