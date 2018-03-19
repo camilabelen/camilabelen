@@ -92,7 +92,7 @@ $(document).ready(function() {
         $('.freelancerImg img').addClass('animated fadeInLeft');
         // descripción
         $('.freelancerText').html('');
-        $('.freelancerText').append(`<div id="text"><h2>Freelancer</h2><p>Réplica del template Freelancer de Bootstrap, utilizando HTML y CSS</p>
+        $('.freelancerText').append(`<div id="text"><h2>Freelancer</h2><p>Replica of the Freelancer template of Bootstrap, using HTML and CSS.</p>
               <button class="btn code"><a href="https://github.com/camilabelen/freelancer">CÓDIGO</a></button>
               <button class="btn"><a href="https://camilabelen.github.io/freelancer/">DEMO</a></button></div>`);
         $('#text').addClass('animated fadeInRight');
@@ -114,7 +114,7 @@ $(document).ready(function() {
         $('.labcarText').html('');
         // descripción
         $('.labcarText').append(`<div id="textL"><h2>Labcar</h2>
-              <p>Proyecto realizado con el framework Bootstrap, con versión web y mobile</p>
+              <p>Project made with the Bootstrap framework, with web and mobile version.</p>
               <button class="btn code"><a href="https://github.com/camilabelen/lab-car-boilerplate">CÓDIGO</a></button>
               <button class="btn"><a href="https://camilabelen.github.io/lab-car-boilerplate/">DEMO</a></button>
             </div></div>`);
@@ -135,7 +135,7 @@ $(document).ready(function() {
         // Descripción
         $('.catbookText').html('');
         $('.catbookText').append(`<div id="textC"><h2>Catbook</h2>
-              <p>La red social Catbook es producto del trabajo colaborativo, con uso de Firebase, jQuery y Bootstrap. Versión de escritorio y dispositivos móviles.</p>
+              <p>The Catbook social network is the product of collaborative work, with the use of Firebase, jQuery and Bootstrap. Desktop version and mobile devices.</p>
               <button class="btn code"><a href="https://github.com/camilabelen/red-social">CÓDIGO</a></button>
               <button class="btn"><a href="https://sabrinavillalobos.github.io/red-social/">DEMO</a></button></div>`);
         $('#textC').addClass('animated fadeInRight');
@@ -155,7 +155,7 @@ $(document).ready(function() {
         // Descripción
         $('.artText').html('');
         $('.artText').append(`<div id="textA"><h2>Art Gallery</h2>
-              <p>Art Gallery es un trabajo colaborativo que consiste en una página web para buscar y guardar obras de arte, en este proyecto se hizo uso de la API del Museo de Arte de Harvard, jQuery, Bootstrap y Firebase.</p>
+              <p>Art Gallery is a collaborative work that consists of a web page to search and save works of art, In this project, the API of the Harvard Museum of Art, jQuery, Bootstrap and Firebase was used.</p>
               <button class="btn code"><a href="https://github.com/camilabelen/art-Gallery">CÓDIGO</a></button>
               <button class="btn"><a href="https://camilabelen.github.io/art-Gallery/">DEMO</a></button></div>`);
         $('#textA').addClass('animated fadeInLeft');
