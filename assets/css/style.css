@@ -40,6 +40,11 @@ body{
   border-radius: 1em;
   display: block;
   margin-left: 18em;
+  transition: background-color 0.7s ease-in-out;
+}
+.greeting button:hover{
+  background-color: #7D3B99;
+  transition: background-color 0.7s ease-in-out;
 }
 .greeting button:focus{
   outline: none;
@@ -162,16 +167,14 @@ body{
   display:inline-block;
   color: #000;
 }
-
-#menu li:hover{
-  color: #000;
+#menu li a:hover{
+  color: #502F84;
 }
 #menu li.active a:hover{
-  color: #000;
+  color: #3C124F;
 }
 #menu li a{
   text-decoration: none;
-  color: #000;
   display:block;
   color: #FFFFFF;
   border-radius: 1em;
@@ -282,7 +285,7 @@ body{
   width: 100%;
 }
 
-/* Section 4
+/* Section 4, Section 5, Section 6, Section 7
  * --------------------------------------- */
 #section4, #section5, #section6, #section7{
   background-color: #FFFFFF !important;
@@ -296,6 +299,11 @@ body{
 .myWork button{
   background-color: #985FA2;
   border-radius: 1em;
+  transition: background-color 0.7s ease-in-out;
+}
+.myWork button:hover{
+  background-color: #7D3B99;
+  transition: background-color 0.7s ease-in-out;
 }
 .myWork button:focus{
   outline: none;
@@ -303,7 +311,7 @@ body{
 .myWork button a{
   color: #FFF;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.95em;
 }
 .myWork button a:hover{
   color: #FCDEFE;
@@ -317,10 +325,10 @@ background: linear-gradient(to bottom, rgba(255,241,184,1) 0%, rgba(255,143,177,
 color: #FFF;
 }
 .contactIcons img{
-  width: 100%;  
+  width: 100%;
 }
 .contactIcons{
-  margin-top: 0.5em;  
+  margin-top: 0.5em;
   transition: all 3s ease-in-out;
   animation: ufo 5s infinite;
 }
@@ -349,12 +357,17 @@ color: #FFF;
 .ufoContact + .tooltip.right > .tooltip-arrow {
   border-right: 5px solid #7E519B;
 }
-
 .icon-github, 
 .icon-linkedin2{
   color: #FFF;
   margin: 3em 0.5em 0 0.5em;
   font-size: 3em;
+}
+span:hover{
+  color: #E07B99;
+}
+.RRSS a:hover{
+  text-decoration: none;
 }
 .footer{
   margin-top: 7em;
@@ -369,7 +382,7 @@ span{
 }
 
 /*media queries*/
-@media only screen and (max-width: 320px) {  
+@media only screen and (max-width: 400px) {
  section{
     height: 100vh;
   }
@@ -510,7 +523,6 @@ span{
     margin-top: 3em;
   }
 }
-
 @media only screen and (max-width: 767px) {
   section{
     height: 100vh;
@@ -611,9 +623,8 @@ span{
     margin-top: 3em;
     font-size: 0.8em;
   }
-} 
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
   section{
     height: 100vh;
   }
@@ -706,11 +717,31 @@ span{
   }
   .icon-github, 
   .icon-linkedin2{
+    margin: 1em 0 0 -3em;
+    font-size: 3.5em;
+  }
+  .footer{
+    margin-top: 2em;
+    font-size: 1em;
+  }
+}
+@media only screen and (min-device-width:1200px) {
+  #section2 p{
+    font-size: 1.1em;
+  }
+  #section4 img, #section5 img, #section6 img, #section7 img{
+    width: 80%;
+  }
+  .RRSS{
+    margin-top: 5em;
+  }
+  .icon-github, 
+  .icon-linkedin2{
     margin: 1em 0.5em 0 0.5em;
     font-size: 3.5em;
   }
   .footer{
-    margin-top: 8%;
+    margin-top: 2em;
     font-size: 1em;
   }
 }

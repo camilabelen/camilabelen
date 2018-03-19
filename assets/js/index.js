@@ -24,15 +24,24 @@ $(document).ready(function() {
       // Sección 2
       if (index === 2) {
         $('.me').html('');
-        $('.textAbout').html('');
+        $('.textAboutMobile').html('');
+        $('.textAboutDesktop').html('');
         // foto
         $('.me').append(`<img src="assets/img/perfil_camila.png" alt="" class="">`);
         $('.me img').addClass('animated fadeInLeft');
-        // texto                
-        $('.textAbout').append(`<div id="aboutMe"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+        // texto
+        if($(window).width < 768) {
+          $('.textAboutMobile').append(`<div id="aboutMe"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
               <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to development as Front End.</p>
               <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p></div>`);
-        $('#aboutMe').addClass('animated fadeInRight');
+          $('#aboutMe').addClass('animated fadeInRight');
+        } else {
+          $('.textAboutDesktop').append(`<div id="aboutMe"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+              <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to development as Front End.</p>
+              <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p></div>`);
+          $('#aboutMe').addClass('animated fadeInRight');
+        }
+        
       }
       if (index !== 2) {
         // foto
