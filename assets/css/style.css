@@ -419,7 +419,10 @@ span{
   #section2 p{
     font-size: 0.8em;
     text-align: justify;
-  }  
+  }
+  #aboutMeMobile{
+    font-size: 0.8em;
+  }
   .me img{
     margin: 1em 0 -6.6em 0;
     width: 100%;
@@ -488,6 +491,9 @@ span{
   #section2 p{
     text-align: justify;
   }  
+  #aboutMeMobile{
+    font-size: 0.8em;
+  }
   .me img{
     margin: 1em 0 -6.6em 0;
     width: 100%;
@@ -569,9 +575,11 @@ span{
   }
   #section2 h1{
     font-size: 2em;
-    margin-top: -40px;
+    margin-top: -60px;
   }
-  
+  #aboutMeMobile{
+    font-size: 0.8em;
+  }
   /*seccion 3*/  
   .mobile{
     margin-left: 5.5em;
@@ -725,7 +733,7 @@ span{
     font-size: 1em;
   }
 }
-@media only screen and (min-device-width:1200px) {
+@media only screen and (max-device-width:1200px) {
   #section2 p{
     font-size: 1.1em;
   }
@@ -745,3 +753,24 @@ span{
     font-size: 1em;
   }
 }
+@media only screen and (min-device-width:1201px) {
+  #section2 p{
+    font-size: 1.1em;
+  }
+  #section4 img, #section5 img, #section6 img, #section7 img{
+    width: 100%;
+  }
+  .RRSS{
+    margin-top: 7em;
+  }
+  .icon-github, 
+  .icon-linkedin2{
+    margin: 1em 0.5em 0 0.5em;
+    font-size: 3.3em;
+  }
+  .footer{
+    margin-top: 7em;
+    font-size: 1em;
+  }
+}
+

@@ -30,16 +30,16 @@ $(document).ready(function() {
         $('.me').append(`<img src="assets/img/perfil_camila.png" alt="" class="">`);
         $('.me img').addClass('animated fadeInLeft');
         // texto
-        if($(window).width < 768) {
-          $('.textAboutMobile').append(`<div id="aboutMe"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+        if($(window).width() <= 768) {
+          $('.textAboutMobile').append(`<div id="aboutMeMobile"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
               <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to development as Front End.</p>
               <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p></div>`);
-          $('#aboutMe').addClass('animated fadeInRight');
+          $('#aboutMeMobile').addClass('animated fadeInRight');
         } else {
-          $('.textAboutDesktop').append(`<div id="aboutMe"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
+          $('.textAboutDesktop').append(`<div id="aboutMeDesktop"><h1>THIS IS ME</h1><p> <span>¡Hi! My name is Camila.</span></p> <p>I'm a<strong> Front End</strong> developer and I've got a BA in <strong>Plastic Arts</strong>, I'm 25 years old and I am passionate about code, art, music, videogames and literature.</p>
               <p>I define myself as a creative person, <strong>self-taught</strong>, persevering and <strong>curious</strong>, concepts that have been essential to development as Front End.</p>
               <p>In my free time I enjoy videogames, series, nature, my puppies and learn new things.</p></div>`);
-          $('#aboutMe').addClass('animated fadeInRight');
+          $('#aboutMeDesktop').addClass('animated fadeInRight');
         }
         
       }
@@ -48,8 +48,10 @@ $(document).ready(function() {
         $('.me img').removeClass('fadeInLeft');
         $('.me img').addClass('fadeOut');
         // texto
-        $('#aboutMe').removeClass('fadeInRight');
-        $('#aboutMe').addClass('fadeOut');
+        $('#aboutMeMobile').removeClass('fadeInRight');
+        $('#aboutMeMobile').addClass('fadeOut');
+        $('#aboutMeDesktop').removeClass('fadeInRight');
+        $('#aboutMeDesktop').addClass('fadeOut');
       }
       // Sección 3
       if (index === 3) {
